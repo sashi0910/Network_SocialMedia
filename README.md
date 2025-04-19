@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Network
 
-## Getting Started
+## Description
+Network is a full-stack social media application built with Next.js. It includes core features such as authentication, post creation with text and images, likes, comments, notifications, suggested users, profile updates, dark mode, and a responsive modern UI design.
 
-First, run the development server:
+## 🔗Live Link
+<a href="https://network-social-media.vercel.app/" target="_blank">
+  Network Social Media
+</a>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
+- 🔐 User authentication (Email/Password and Google)
+- 📝 Post creation with text and image uploads
+- ❤️ Like and comment on posts
+- 🔔 Notifications for likes, comments, and follows
+- 👥 Suggested users to follow
+- 🛠️ Profile management (update and delete)
+- 🌙 Dark mode support
+- 📱 Responsive design for mobile and desktop
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
+- **Frontend**: React, Next.js
+- **Styling**: Tailwind CSS, Shadcn UI
+- **Authentication**: Clerk
+- **Database**: Neon (PostgreSQL)
+- **ORM**: Prisma
+- **Image Uploads**: Uploadthing
+- **Deployment**: Vercel
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Prerequisites
+To follow along with this project, you should have a basic understanding of:
+- ⚛️ React
+- 💻 JavaScript/TypeScript
+- 📚 Next.js
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All services used in this project have generous free plans, so you won't need to pay anything to get started.
 
-## Learn More
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/network.git
+   cd network
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Set up environment variables:
+   - Create a `.env` file in the root directory and add your environment variables in the below manner:
+   ```
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=***
+   CLERK_SECRET_KEY=***
+   DATABASE_URL=***
+   UPLOADTHING_TOKEN=***
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+5. Open your browser and navigate to `http://localhost:3000`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage
+- 🆕 Sign up or log in using Google or email/password.
+- 🖼️ Create posts with text and images.
+- 👍 Like and comment on posts.
+- 🔧 Manage your profile and view notifications.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+🤝 Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
+
+## License
+📜 This project is licensed under the MIT License.
+
+## Contact
+📧 For any questions or support, feel free to reach out to me at [sashijut@gmail.com].
